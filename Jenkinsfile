@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'us-slave'
+      label 'us-slaves'
     }
 
   }
