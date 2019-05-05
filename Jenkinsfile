@@ -11,7 +11,6 @@ pipeline {
 
     }
 
-  }
   stages {
     stage('Trigger SMKIT Generation on Dev Hudson') {
       steps {
