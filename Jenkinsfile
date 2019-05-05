@@ -34,10 +34,5 @@ pipeline {
       }
     }
   }
-  environment {
-    PAAS_BRANCH = ''
-    EMAIL = 'sudharshan.ke@oracle.com'
-    SMKIT_GENERATE_JOB_URL = 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation'
-  }
-  
+    
 }
