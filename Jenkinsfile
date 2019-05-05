@@ -6,8 +6,8 @@ pipeline {
   }
    parameters {
         string(defaultValue: 'sudharshan.ke@oracle.com', description: '', name: 'EMAIL')
-        string(defaultValue: '', description: 'Topic branch to be built', name: 'topic-sudke-19.2.2')
-        string(defaultValue: 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation', description: 'Dev Hudson URL', name: 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation')
+        string(defaultValue: '', description: 'Topic branch to be built', name: 'BRANCH')
+        string(defaultValue: 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation', description: 'Dev Hudson URL', name: 'SMKIT_GENERATE_JOB_URL')
 
     }
 
