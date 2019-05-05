@@ -4,7 +4,7 @@ pipeline {
       label 'us-slaves'
     }
    parameters {
-        stringParam(defaultValue: sudharshan.ke@oracle.com, description: '', name: 'EMAIL')
+        stringParam(defaultValue: 'sudharshan.ke@oracle.com', description: '', name: 'EMAIL')
         stringParam(defaultValue: '', description: 'Topic branch to be built', name: 'topic-sudke-19.2.2')
         stringParam(defaultValue: 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation', description: 'Dev Hudson URL', name: 'http://slc14rif.us.oracle.com:8080/hudson/cis/job/psm-dev-pipeline-smkit-generation')
 
