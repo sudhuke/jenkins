@@ -18,7 +18,7 @@ pipeline {
     }
     stage('Trigger SM Install on DTE') {
       steps {
-       sh 'bash /net/sca00jpl/scratch/paasqa/dtejob/scripts/psm_dev_pipline_trigger_smkit_dteinstall.sh'
+        sh 'bash /net/sca00jpl/scratch/paasqa/dtejob/scripts/psm_dev_pipline_trigger_smkit_dteinstall.sh'
       }
     }
     stage('Monitor SM Install on DTE') {
@@ -26,5 +26,9 @@ pipeline {
         sh 'bash /net/sca00jpl/scratch/paasqa/dtejob/scripts/psm_dte_job_status.sh $DTE_JOB_ID'
       }
     }
+  }
+  environment {
+    PAAS_BRANCH = ''
+    EMAIL = 'sudharshan.ke@oracle.com'
   }
 }
