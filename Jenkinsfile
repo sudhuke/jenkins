@@ -3,6 +3,7 @@ pipeline {
     node {
       label 'us-slaves'
     }
+  }
    parameters {
         stringParam(defaultValue: 'sudharshan.ke@oracle.com', description: '', name: 'EMAIL')
         stringParam(defaultValue: '', description: 'Topic branch to be built', name: 'topic-sudke-19.2.2')
